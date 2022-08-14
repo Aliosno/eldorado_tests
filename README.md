@@ -1,7 +1,8 @@
 Introduction
 This repository contains several Web UI tests for eldorado.ru. Uses PyTest + Selenium.
-Files
 
+ 
+Files
 conftest.py contains all the required code to catch failed test cases and make screenshot of the page in case any test case will fail.
 
 pytest.ini contains driver select and path.
@@ -21,16 +22,16 @@ tests/test_run_2_region_select.py contains several Web UI tests for the region s
 tests/test_run_3_basket.py contains several Web UI tests for basket page elements.
 
 tests/test_run_4_search_and_filtering.py contains several Web UI tests for search and filtering functionality.
+
+ 
 How To Run Tests
+Install all requirements:
 
-    Install all requirements:
+pip3 install -r requirements.txt
+Download and unpack Selenium WebDriver (choose version which is compatible with your browser).
 
-    pip3 install -r requirements.txt
+Open conftest.py and specify the driver type and path to the executable file.
 
-    Download and unpack Selenium WebDriver (choose version which is compatible with your browser).
+Run tests:
 
-    Open conftest.py and specify the driver type and path to the executable file.
-
-    Run tests:
-
-    python -m pytest -v tests/
+python -m pytest -v tests/
