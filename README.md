@@ -1,8 +1,10 @@
 Introduction
+
 This repository contains several Web UI tests for eldorado.ru. Uses PyTest + Selenium.
 
  
 Files
+
 conftest.py contains all the required code to catch failed test cases and make screenshot of the page in case any test case will fail.
 
 pytest.ini contains driver select and path.
